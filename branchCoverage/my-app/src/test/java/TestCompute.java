@@ -22,7 +22,7 @@ public class TestCompute {
     c = new Compute(mq);
     when(mq.size()).thenReturn(0);
     int a = c.countNumberOfOccurrences("aa");
-    assertTrue(a==-1);
+    assertEquals(-1,a);
   }
 
 @Test
@@ -31,9 +31,8 @@ public class TestCompute {
     c = new Compute(mq);
     when(mq.size()).thenReturn(1);
     when(mq.contains("aaa")).thenReturn(false);
-    //when(mq.getAt(0)).thenReturn("aaa");
     int a = c.countNumberOfOccurrences("aaa");
-    assertTrue(a==0);
+    assertEquals(0,a);
   }
 
  @Test
