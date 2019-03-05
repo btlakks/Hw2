@@ -13,4 +13,19 @@ public class TestUtil {
 
   @Test
   public void example() { assertTrue(true); }
+
+@Test
+  public void example2() {
+//if lenght==1 
+	int[] intArray = new int[1];
+	assertFalse(c.compute(intArray));
+}
+
+@Test
+  public void example3() {
+//if lenght%2==0
+ 	int[] intArray = new int[]{ 1,2}; 
+	assertFalse(c.compute(intArray));
+}
+
 }
