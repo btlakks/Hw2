@@ -40,4 +40,16 @@ public void testRuntimeException() {
   assertTrue(thrown);
 }
 
+@Test
+  public void testSum() {
+ 	int[] intArray = new int[]{ 4,2,6}; 
+	assertTrue(c.compute(intArray));
+}
+
+@Test
+  public void testSumNot() {
+ 	int[] intArray = new int[]{ 4,2,7}; 
+	assertFalse(c.compute(intArray));
+}
+
 }
