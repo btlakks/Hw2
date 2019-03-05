@@ -28,4 +28,16 @@ public class TestUtil {
 	assertFalse(c.compute(intArray));
 }
 
+@Test
+public void testRuntimeException() {
+  boolean thrown = false;
+  int[] intArray = new int[]{ 1,2,0};
+  try {
+    c.compute(intArray);
+  } catch (RuntimeException e) {
+    thrown = true;
+  }
+  assertTrue(thrown);
+}
+
 }
